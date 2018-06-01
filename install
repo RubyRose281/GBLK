@@ -10,9 +10,11 @@ read install
 echo -e -n "\n$ijoTap ENTER"
 apt update && apt upgrade
 echo -e "\n$ijo ..:: [ INSTALL required ] ::..\n$not"
+read required
 echo -e -n "\n$ijoTap ENTER"
 apt install python2 nmap hydra
 echo -e "\n$ijo ..:: [ Mengekstrak Paket ] ::..\n$not"
+read unpacking
 echo -e -n "\n$ijoTap ENTER"
 unzip GBLK.zip
 rm GBLK.zip
