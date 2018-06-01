@@ -17,11 +17,11 @@ echo -e "  \033[0m |_ Click Langsung => \033[32;1mhttps://fb.com/GantengMaks"
 echo -e "  \033[0m>>>\033[1;32mJack O'neil"
 echo -e "  \033[0m |_ Click Langsung => \033[32;1mhttps://fb.com/GantengMaks\n"
 
-echo -e "  \033[0m>>>\033[32;1mSorry Setelah Update Review Ulang Creator Pertama + Kedua Udah ga pernah Keliatan lagi maaf codenamenya ga disebutin"
+echo -e "  \033[0m>>>\033[32;1m Sorry Setelah Update Review Ulang Creator Pertama + Kedua Udah ga pernah Keliatan lagi maaf codenamenya ga disebutin"
 
 echo -e "  \033[0m>>>\033[32;1m Tools Kemudian Dikembangkan Oleh J_Lnyx69 & Mr_/bon'007"
 echo -e "  \033[0m>>>\033[32;1m Player Old Pasti Tau Ama Tools Legend Ini"
-echo -e "  >>> Mungkin ada sebagian Tool yg membutuhkan akses root !"
+echo -e "  \033[0m>>>\033[32;1m Mungkin ada sebagian Tool yg membutuhkan akses root !"
 echo -e "\033[0m\n\n"
 echo ""
 echo -e "\033[1;32m\nKetik ./start untuk memulai GBLK\033[0m"
