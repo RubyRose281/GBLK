@@ -27,3 +27,4 @@ echo ""
 echo -e "\033[1;32m\nKetik ./start untuk memulai GBLK\033[0m"
 echo -e "Tekan ENTER untuk lanjut"
 read about
+clear
