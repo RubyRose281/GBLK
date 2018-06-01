@@ -1,13 +1,10 @@
 # GBLK-toolkit
 
 ###### installation :
-
-* apt update && apt upgrade
-* apt-get install git python2 hydra nmap
 * git clone https://github.com/JLynx69/GBLK-toolkit
 * cd GBLK-toolkit
-* chmod +x start
-* ./start
+* chmod +x install
+* ./install
 
 ###### Created By :
 1. Syifani Abdullah
