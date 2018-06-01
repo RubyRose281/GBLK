@@ -1,0 +1,17 @@
+#!/bin/bash
+
+abang='\033[1;31m'
+biru='\033[1;34m'
+ijo='\033[1;32m'
+not='\033[0m'
+
+echo -e "$ijo ..:: [ INSTALL GBLK-toolkit ] ::..\n$not"
+apt update && apt upgrade
+echo -e "\n$ijo ..:: [ INSTALL required ] ::..\n$not"
+apt install python2 nmap hydra
+echo -e "\n$ijo ..:: [ Mengekstrak Paket ] ::..\n$not"
+unzip GBLK.zip
+rm GBLK.zip
+chmod +x start
+bash about
+rm about
