@@ -6,12 +6,17 @@ ijo='\033[1;32m'
 not='\033[0m'
 
 echo -e "$ijo ..:: [ INSTALL GBLK-toolkit ] ::..\n$not"
+read install
+echo -e -n "\n$ijoTap ENTER"
 apt update && apt upgrade
 echo -e "\n$ijo ..:: [ INSTALL required ] ::..\n$not"
+echo -e -n "\n$ijoTap ENTER"
 apt install python2 nmap hydra
 echo -e "\n$ijo ..:: [ Mengekstrak Paket ] ::..\n$not"
+echo -e -n "\n$ijoTap ENTER"
 unzip GBLK.zip
 rm GBLK.zip
 chmod +x start
 bash about
 rm about
+rm install
