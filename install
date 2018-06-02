@@ -11,5 +11,6 @@ apt-get install python2 nmap hydra
 bash about
 echo "cd GBLK/tools && sh start" > start
 chmod +x start
+chmod +x GBLK/ettercap/*
 rm about
 rm install
