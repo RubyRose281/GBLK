@@ -1,0 +1,8 @@
+#!/system/xbin/bash
+
+clear
+clear
+echo "
+       \033[1;32mGood Bye \033[0m
+"
+exit

@@ -1,0 +1,30 @@
+#!/usr/bin/python
+
+import md5, sys
+
+if len(sys.argv) != 3:
+	print "Masukin md5 yg mau lu crack GoBloG"
+	sys.exit(1)
+	
+pw = sys.argv[1]
+wordlist = sys.argv[2]
+try:
+  words = open(wordlist, "r")
+except(IOError): 
+  print "Error: cek tempat wordlist lu coeg..!!\n"
+  sys.exit(1)
+words = words.readlines()
+print "\n",len(words),"\033[32;1mkata yg ada di worlist\033[0m"
+for word in words:
+	hash = md5.new(word[:-1])
+	value = hash.hexdigest()
+	if pw == value: 
+		print "\033[32;1mhasil password: \033[0m",word,"\n"
+
+
+
+	
+	
+
+
+

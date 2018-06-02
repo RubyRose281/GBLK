@@ -1,0 +1,104 @@
+#!/usr/bin/python
+#
+# hash decrypt based on dictionary attack
+
+def hashcrack():
+    # imports modules
+    import hashlib
+    
+
+    # set some variables
+    passhash = raw_input("\033[32;1mMasukan Hash:\033[0m ")
+    passhash = passhash.strip('\n')
+    passlist = "../wodlis/passwords.lst"
+
+    #print len(passhash)
+    print("")
+    print("")
+    print("")
+    print("")
+    if len(passhash) == 32:
+        type = 'md5'
+        print("\033[32;1mtipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.md5(line).hexdigest() == passhash:
+                print('\n' + ' \033[32;1mhasil Password : '+ line + '\033[0m\n')
+        pl.close()
+    elif len(passhash) == 40:
+        type = 'sha1'
+        print("\033[32;1mTipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.sha1(line).hexdigest() == passhash:
+                print('\n' + 'Hasil Password : '+ line + '\033[0m\n')
+        pl.close()
+    elif len(passhash) == 56:
+        type = 'sha224'
+        print("Tipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.sha224(line).hexdigest() == passhash:
+                print('\n' + 'Hasil Password: '+ line + '\033[0m\n')
+        pl.close()
+    elif len(passhash) == 60:
+        type = 'sha256'
+        print("Tipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.sha256(line).hexdigest() == passhash:
+                print('\n' + 'Hasil Password: '+ line + '\033[0m\n')
+        pl.close()
+    elif len(passhash) == 96:
+        type = 'sha384'
+        print("Tipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.sha384(line).hexdigest() == passhash:
+                print('\n' + 'Hasil Password: '+ line + '\033[0m\n')
+        pl.close()
+    elif len(passhash) == 128:
+        type = 'sha512'
+        print("Tipe yg mau di Crack " + type + " \033[0m")
+        pl = open(passlist, "r")
+        for line in pl.readlines():
+            line = line.strip('\n')
+            if hashlib.sha512(line).hexdigest() == passhash:
+                print('\n' + '\033[32;1m Hasil Password : '+ line + '\033[0m\n')
+        pl.close()
+
+        
+if __name__ == '__main__':
+    from os import system
+    system('clear')
+    
+    # some font settings
+    bold = "\033[1m"
+    reset = "\033[0;0m"
+    red = "\033[31m"
+    
+    #header
+    print("       \033[32;1m..::|[ Hash Cracker ]|::..\033[0m ")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    print("")
+    
+    
+    #run hash crack
+    hashcrack()

@@ -1,0 +1,38 @@
+#!/usr/bin/python
+
+#ProgramerCilik
+
+#Arfian Dicky Firmansyah
+
+#
+
+#
+
+import sys 
+
+try: 
+	import hashlib
+except(ImportError):
+	print "\nHanya Untuk Python 2.5. atau 3. dan harus pasanng HashLib module... !!\n" 	
+	sys.exit(1) 
+
+if len(sys.argv) != 2:
+	print "Kesalahan..!! Contoh : ./HashGenerator.py PasswordLu"
+	sys.exit(1)
+	
+pw = sys.argv[1]
+
+hash = hashlib.sha1(pw)
+print "\033[32;1mSHA1:\033[0m",hash.hexdigest(),"\n"
+
+hash = hashlib.sha224(pw)
+print "\033[32;1mSHA224:\033[0m",hash.hexdigest(),"\n"
+
+hash = hashlib.sha256(pw)
+print "\033[32;1mSHA256:\033[0m",hash.hexdigest(),"\n"
+
+hash = hashlib.sha384(pw)
+print "\033[32;1mSHA384:\033[0m",hash.hexdigest(),"\n"
+
+hash = hashlib.sha512(pw)
+print "\033[32;1mSHA512:\033[0m",hash.hexdigest(),"\n"
