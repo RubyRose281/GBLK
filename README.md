@@ -13,5 +13,5 @@
 4. Arfian Dicky Firmansyah
 
 ###### Import To Termux by :
-1. M Julius [ bon'007 ]
+1. M Julius [ Mr/bon'007 ]
 2. Jack O'neil
