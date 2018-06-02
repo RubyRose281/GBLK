@@ -1,0 +1,368 @@
+#!/system/xbin/bash
+#!/system/xbin/botbrew
+
+clear
+echo "       =============================
+       [ \033[1;31mG\033[37m-\033[1;32mO\033[37m-\033[1;33mB\033[37m-\033[1;34mL\033[37m-\033[1;35mO\033[37m-\033[1;36mK\033[0m \033[1;31mT\033[37m-\033[1;32mO\033[37m-\033[1;33mO\033[37m-\033[1;34mL\033[37m-\033[1;35mK\033[37m-\033[1;36mI\033[37m-\033[1;31mT\033[0m ]
+       =============================
+"
+echo "\033[0m>>>\033[32;1m Repack By Azzar Nuji"
+echo "\033[1;34m[~] Daftar Tools :\033[36m"
+echo "  1.) Host Scan"
+echo "  2.) Telnet"
+echo "  3.) ARP-Spoofer"
+echo "  4.) DDOS"
+echo "  5.) Sniffer"
+echo "  6.) Set Iptables"
+echo "  7.) WP-Brute"
+echo "  8.) WP-Scan"
+echo "  9.) Admin Finder"
+echo "  10.) Sqlmap Otomatis"
+echo "  11.) Sqlmap Biasa"
+echo "  12.) Port Scanner"
+echo "  13.) CMSmap"
+echo "  14.) MD5 Cracker"
+echo "  15.) MD5 Generator"
+echo "  16.) cPanel bruteForce"
+echo "  17.) FTP BruteForce"
+echo "  18.) Magento BruteForce"
+echo "  19.) joomla brute"
+echo "  20.) Fb bot like and coment"
+echo "  21.) Vuln Scanner"
+echo "  22.) HTTP BruteForce"
+echo "  23.) MySQL BruteForce"
+echo "  24.) Nmap Connect"
+echo "  25.) SYN Scanner"
+echo "  26.) FIN Scanner"
+echo "  27.) ACK Scanner"
+echo "  28.) Window Scanner"
+echo "  29.) Mikrotik BruteForce"
+echo "  30.) SSH BruteForce"
+echo "  31.) VPS BruteForce"
+echo "  32.) HASH Generator"
+echo "  33.) HASH cracker"
+echo "  34.) ZIP password Cracker"
+echo "  35.) MSSQL BruteForce"
+echo "  36.) GmailPOP BruteForce"
+echo "  37.) SMTP Gmail BruteForce"
+echo "  38.) DNS BruteForce"
+echo "  39.) Directory Scanner"
+echo "\n  i.) Info Dev, Tutor"
+echo "  x.) Keluar"
+echo "\033[0m"
+echo -n "
+=> Masukan Nomor Tools: "
+read tool
+echo "\n=> Tools dipilih : $tool
+"
+
+if [ $tool = 0 ]
+then
+echo "
+      \033[1;34mGa ada pilihan 0 gblk! :v\033[0m
+"
+sh start
+
+elif [ $tool = 1 ]
+then
+cd tools/
+sh scanner
+fi
+
+if [ $tool = 2 ]
+then
+sh tela
+fi
+
+if [ $tool = 3 ]
+then
+sh spoof
+fi
+
+if [ $tool = 4 ]
+then
+python2 ddos
+fi
+
+if [ $tool = 5 ]
+then
+sh snif
+fi
+
+if [ $tool = 6 ]
+then
+sh iptables
+fi
+
+if [ $tool = 7 ]
+then
+sh wp-info
+fi
+
+if [ $tool = 8 ]
+then
+clear
+sh wps
+fi
+
+if [ $tool = 9 ]
+then
+py ad
+fi
+
+if [ $tool = 10 ]
+then
+sh sqlmapc
+fi
+
+if [ $tool = 11 ]
+then
+sh sqlmap1
+fi
+
+if [ $tool = 12 ]
+then
+sh prot
+fi
+
+if [ $tool = 13 ]
+then
+sh cm
+fi
+
+if [ $tool = 14 ]
+then
+sh crack
+fi
+
+if [ $tool = 15 ]
+then
+sh cetak
+fi
+
+if [ $tool = 16 ]
+then
+sh cp
+fi
+
+if [ $tool = 17 ]
+then
+sh ftp
+fi
+
+if [ $tool = 18 ]
+then
+sh mag
+fi
+
+if [ $tool = 19 ]
+then
+sh jbf
+fi
+
+if [ $tool = 20 ]
+then
+sh bot
+fi
+
+if [ $tool = 21 ]
+then
+sh nvs
+fi
+
+if [ $tool = 22 ]
+then
+sh nhbf
+fi
+
+if [ $tool = 23 ]
+then
+sh nmbf
+fi
+
+if [ $tool = 24 ]
+then
+sh nmapconnect
+fi
+
+if [ $tool = 25 ]
+then
+sh syn
+fi
+
+if [ $tool = 26 ]
+then
+sh fin
+fi
+
+if [ $tool = 27 ]
+then
+sh ack
+fi
+
+if [ $tool = 28 ]
+then
+sh window
+fi
+
+if [ $tool = 29 ]
+then
+sh hydramikrotik
+fi
+
+if [ $tool = 30 ]
+then
+sh hydrassh
+fi
+
+if [ $tool = 31 ]
+then
+sh vps
+fi
+
+if [ $tool = 32 ]
+then
+sh hg
+fi
+
+if [ $tool = 33 ]
+then
+sh hc
+fi
+
+if [ $tool = 34 ]
+then
+sh zipc
+fi
+
+if [ $tool = 35 ]
+then
+sh mssql
+fi
+
+if [ $tool = 36 ]
+then
+sh pop
+fi
+
+if [ $tool = 37 ]
+then
+sh smtp
+fi
+
+if [ $tool = 38 ]
+then
+sh dbf
+fi
+
+if [ $tool = 39 ]
+then
+sh dir
+fi
+
+if [ $tool = i ] || [ $tool = I ]
+then
+sh about
+fi
+
+if [ $tool -gt 38 ]
+then
+echo "   \033[1;34mGoblok pilihan cuma sampe 20! :v napa lu pilih $tool :v\033[0m
+"
+sh start
+fi
+
+if [ $tool = '\n' ]
+then
+sh start
+fi
+
+if [ $tool = a ] || [ $tool = b ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = c ] || [ $tool = d ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = e ] || [ $tool = f ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = g ] || [ $tool = h ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = j ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = k ] || [ $tool = l ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = m ] || [ $tool = n ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = o ] || [ $tool = p ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = q ] || [ $tool = r ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = s ] || [ $tool = t ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = u ] || [ $tool = v ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = w ] || [ $tool = y ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+fi
+
+if [ $tool = z ]
+then
+echo "\n\033[1;31m       [=] PILIH MENU YG BENER GBLK [=]\n\033[0m"
+gblk
+sh start
+fi
+
+
+if [ $tool = x ]
+then
+clear
+echo "
+       \033[1;32mGood Bye \033[1;31mLOSSER!\033[0m
+"
+exit
+exit
+fi
