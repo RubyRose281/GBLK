@@ -1,52 +1,53 @@
-#!/system/xbin/bash
-#!/system/xbin/botbrew
+#!/bin/bash
 
+cd ../tools
 clear
 echo "       =============================
        [ \033[1;31mG\033[37m-\033[1;32mO\033[37m-\033[1;33mB\033[37m-\033[1;34mL\033[37m-\033[1;35mO\033[37m-\033[1;36mK\033[0m \033[1;31mT\033[37m-\033[1;32mO\033[37m-\033[1;33mO\033[37m-\033[1;34mL\033[37m-\033[1;35mK\033[37m-\033[1;36mI\033[37m-\033[1;31mT\033[0m ]
        =============================
 "
-echo "\033[0m>>>\033[32;1m Repack By Azzar Nuji"
 echo "\033[1;34m[~] Daftar Tools :\033[36m"
 echo "  1.) Host Scan"
 echo "  2.) Telnet"
 echo "  3.) ARP-Spoofer"
 echo "  4.) DDOS"
-echo "  5.) Sniffer"
-echo "  6.) Set Iptables"
-echo "  7.) WP-Brute"
-echo "  8.) WP-Scan"
-echo "  9.) Admin Finder"
-echo "  10.) Sqlmap Otomatis"
-echo "  11.) Sqlmap Biasa"
-echo "  12.) Port Scanner"
-echo "  13.) CMSmap"
-echo "  14.) MD5 Cracker"
-echo "  15.) MD5 Generator"
-echo "  16.) cPanel bruteForce"
-echo "  17.) FTP BruteForce"
-echo "  18.) Magento BruteForce"
-echo "  19.) joomla brute"
-echo "  20.) Fb bot like and coment"
-echo "  21.) Vuln Scanner"
-echo "  22.) HTTP BruteForce"
-echo "  23.) MySQL BruteForce"
-echo "  24.) Nmap Connect"
-echo "  25.) SYN Scanner"
-echo "  26.) FIN Scanner"
-echo "  27.) ACK Scanner"
-echo "  28.) Window Scanner"
-echo "  29.) Mikrotik BruteForce"
-echo "  30.) SSH BruteForce"
-echo "  31.) VPS BruteForce"
-echo "  32.) HASH Generator"
-echo "  33.) HASH cracker"
-echo "  34.) ZIP password Cracker"
-echo "  35.) MSSQL BruteForce"
-echo "  36.) GmailPOP BruteForce"
-echo "  37.) SMTP Gmail BruteForce"
-echo "  38.) DNS BruteForce"
-echo "  39.) Directory Scanner"
+echo "  5.) DDOS 2"
+echo "  6.) Sniffer"
+echo "  7.) Set Iptables"
+echo "  8.) WP-Brute"
+echo "  9.) WP-Scan"
+echo "  10.) Admin Finder"
+echo "  11.) Sqlmap Otomatis"
+echo "  12.) Sqlmap Biasa"
+echo "  13.) Port Scanner"
+echo "  14.) CMS map"
+echo "  15.) MD5 Cracker"
+echo "  16.) MD5 Generator"
+echo "  17.) cPanel bruteForce"
+echo "  18.) FTP BruteForce"
+echo "  19.) Magento BruteForce"
+echo "  20.) Joomla brute"
+echo "  21.) Fb bot like and coment"
+echo "  22.) Vuln Scanner"
+echo "  23.) HTTP BruteForce"
+echo "  24.) MySQL BruteForce"
+echo "  25.) Nmap Connect"
+echo "  26.) SYN Scanner"
+echo "  27.) FIN Scanner"
+echo "  28.) ACK Scanner"
+echo "  29.) Window Scanner"
+echo "  30.) Mikrotik BruteForce"
+echo "  31.) SSH BruteForce"
+echo "  32.) VNC Login Bruteforce"
+echo "  33.) VPS BruteForce"
+echo "  34.) HASH Generator"
+echo "  35.) HASH cracker"
+echo "  36.) ZIP password Cracker"
+echo "  37.) MSSQL BruteForce"
+echo "  38.) GmailPOP BruteForce"
+echo "  39.) SMTP Gmail BruteForce"
+echo "  40.) DNS BruteForce"
+echo "  41.) Directory Scanner"
 echo "\n  i.) Info Dev, Tutor"
 echo "  x.) Keluar"
 echo "\033[0m"
@@ -61,11 +62,11 @@ then
 echo "
       \033[1;34mGa ada pilihan 0 gblk! :v\033[0m
 "
+sh yahh
+cd GBLK/tools
 sh start
-
 elif [ $tool = 1 ]
 then
-cd tools/
 sh scanner
 fi
 
@@ -86,176 +87,186 @@ fi
 
 if [ $tool = 5 ]
 then
-sh snif
+bash ddos2
 fi
 
 if [ $tool = 6 ]
 then
-sh iptables
+sh snif
 fi
 
 if [ $tool = 7 ]
 then
-sh wp-info
+sh iptables
 fi
 
 if [ $tool = 8 ]
+then
+sh wp-info
+fi
+
+if [ $tool = 9 ]
 then
 clear
 sh wps
 fi
 
-if [ $tool = 9 ]
-then
-py ad
-fi
-
 if [ $tool = 10 ]
 then
-sh sqlmapc
+python2 ad
 fi
 
 if [ $tool = 11 ]
 then
-sh sqlmap1
+sh sqlmapc
 fi
 
 if [ $tool = 12 ]
 then
-sh prot
+sh sqlmap1
 fi
 
 if [ $tool = 13 ]
 then
-sh cm
+sh prot
 fi
 
 if [ $tool = 14 ]
 then
-sh crack
+sh cm
 fi
 
 if [ $tool = 15 ]
 then
-sh cetak
+sh crack
 fi
 
 if [ $tool = 16 ]
 then
-sh cp
+sh cetak
 fi
 
 if [ $tool = 17 ]
 then
-sh ftp
+sh cp
 fi
 
 if [ $tool = 18 ]
 then
-sh mag
+sh ftp
 fi
 
 if [ $tool = 19 ]
 then
-sh jbf
+sh mag
 fi
 
 if [ $tool = 20 ]
 then
-sh bot
+sh jbf
 fi
 
 if [ $tool = 21 ]
 then
-sh nvs
+sh bot
 fi
 
 if [ $tool = 22 ]
 then
-sh nhbf
+sh nvs
 fi
 
 if [ $tool = 23 ]
 then
-sh nmbf
+sh nhbf
 fi
 
 if [ $tool = 24 ]
 then
-sh nmapconnect
+sh nmbf
 fi
 
 if [ $tool = 25 ]
 then
-sh syn
+sh nmapconnect
 fi
 
 if [ $tool = 26 ]
 then
-sh fin
+sh syn
 fi
 
 if [ $tool = 27 ]
 then
-sh ack
+sh fin
 fi
 
 if [ $tool = 28 ]
 then
-sh window
+sh ack
 fi
 
 if [ $tool = 29 ]
 then
-sh hydramikrotik
+sh window
 fi
 
 if [ $tool = 30 ]
 then
-sh hydrassh
+sh hydramikrotik
 fi
 
 if [ $tool = 31 ]
 then
-sh vps
+sh hydrassh
 fi
 
 if [ $tool = 32 ]
 then
-sh hg
+sh vnc
 fi
 
 if [ $tool = 33 ]
 then
-sh hc
+sh vps
 fi
 
 if [ $tool = 34 ]
 then
-sh zipc
+sh hg
 fi
 
 if [ $tool = 35 ]
 then
-sh mssql
+sh hc
 fi
 
 if [ $tool = 36 ]
 then
-sh pop
+sh zipc
 fi
 
 if [ $tool = 37 ]
 then
-sh smtp
+sh mssql
 fi
 
 if [ $tool = 38 ]
 then
-sh dbf
+sh pop
 fi
 
 if [ $tool = 39 ]
+then
+sh smtp
+fi
+
+if [ $tool = 40 ]
+then
+sh dbf
+fi
+
+if [ $tool = 41 ]
 then
 sh dir
 fi
