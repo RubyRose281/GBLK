@@ -1,0 +1,14 @@
+#!/bin/bash
+
+abang='\033[1;31m'
+ijo='\033[1;32m'
+biru='\033[1;34m'
+
+echo -e "$ijo ..::[ INSTALL REQUIRED ]::.."
+echo -e "$biru   Tekan ENTER untuk Lanjut"
+read install
+apt-get install python2 nmap hydra
+bash about
+echo "cd GBLK/tools && sh start" > start
+chmod +x start
+rm about
