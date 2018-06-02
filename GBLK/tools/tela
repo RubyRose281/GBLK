@@ -1,0 +1,55 @@
+#!/bin/bash
+
+
+echo "1" > /proc/sys/net/ipv4/ip_forward
+clear
+echo "   
+       \033[32;1m..::|[ Telnet Scanner + Bruteforce ]|::.. \033[0m "
+echo "
+\033[37m[~] Masukan IP target atau Range"
+echo -n "\033[37m[~] IP Target: " 
+read tarb
+echo "\n[!] Target: $tarb"
+
+echo -n "\n[?] Simpan Hasil ke File? (y)ya/(g)GAK: "
+read  yagak
+echo "\n==> Pilihan: $yagak"
+
+if [ $yagak = y ] || [ $yagak = Y ]
+then
+echo -n "[?] Tulis Nama Filenya: "
+read nemfil
+echo "\n==> Nama File: $nemfil.txt"
+echo "==> Proses..."
+nmap --script telnet-brute -p 23 $tarb | awk '/Nmap scan report for/{print "\n[+] IP: " $5 ;} /Valid credentials/{print "  [-] Akun ditemukan : " $2 ;} /No valid accounts found/{print "  [-] Tidak ditemukan akun valid!" ;} /no-response/{print " [-] host down" ;} /filtered/{print "  [-] host down" ;} /closed/{print "  [-] host down" ;}' > $nemfil.txt
+echo "==> Disimpan di /sdcard/simpenan/$nemfil.txt"
+cd /
+busybox mv data/tools/$nemfil.txt* sdcard/simpenan/
+echo "
+[~] Selesai..."
+fi
+
+if [ $yagak = g ] || [ $yagak = G ]
+then
+echo "==> Proses..."
+nmap --script telnet-brute -p 23 $tarb | awk '/Nmap scan report for/{print "\n\033[1;34m[+]\033[37m IP: \033[1;32m" $5 "\033[0m" ;} /Valid credentials/{print " \033[1;32m [-] \033[1;37mAkun ditemukan : \033[1;32m" $2 "\033[0m" ;} /No valid accounts found/{print " \033[1;33m [-] \033[33mTidak ditemukan akun valid!\033\[0m" ;} /no-response/{print "\033[1;31m [-] host down\033[0m" ;} /filtered/{print " \033[1;31m [-] host down\033[0m" ;} /closed/{print " \033[1;31m [-] host down\033[0m" ;}'
+echo "\033[37m\n[~] Selesai...\033[0m"
+fi
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+

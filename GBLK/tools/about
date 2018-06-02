@@ -1,0 +1,62 @@
+#!/bin/bash
+
+clear
+clear
+clear
+clear
+echo "       =============================
+       [ \033[1;31mG\033[37m-\033[1;32mO\033[37m-\033[1;33mB\033[37m-\033[1;34mL\033[37m-\033[1;35mO\033[37m-\033[1;36mK\033[0m \033[1;31mT\033[37m-\033[1;32mO\033[37m-\033[1;33mO\033[37m-\033[1;34mL\033[37m-\033[1;35mK\033[37m-\033[1;36mI\033[37m-\033[1;31mT\033[0m ]
+       ============================="
+echo "\n\033[1;31m  [!] Created By [!]\033[32m"
+echo "  \033[0m>>>\033[32;1m Syifani Abdullah"
+echo "  \033[0m |_ Click Langsung => \033[32;1mhttps://www.facebook.com/GantengMaks"
+echo "  \033[0m>>>\033[32;1m Nunul Azmi"
+echo "  \033[0m |_ Click LAngsung => \033[32;1mhttps://www.facebook.com/Remot.GAZ"
+echo "  \033[0m>>>\033[32;1m ~Gans"
+echo "  \033[0m |_ Click Langsung => \033[32;1mhttps://www.facebook.com/ichsan.AndroSec"
+echo "  \033[0m>>>\033[32;1m ./Xi4u7"
+echo "  \033[0m |_ Click Langsung => \033[32;1mhttps://www.facebook.com/Xi4u7"
+echo "\n  \033[1;31m[!] Import To Termux By [!]\033[1;32m"
+echo "  \033[0m>>>\033[1;32m Mr_/bon'007"
+echo "  \033[0m |_ Click Langsung => \033[32;1mhttps://www.facebook.com/bon007.phtml"
+echo "  \033[0m>>>\033[1;32m Jack O'neil"
+echo "  \033[0m |_ Click Langsung => \033[32;1mhttps://www.facebook.com/Jlynx69"
+
+echo "\n  \033[0m>>>\033[32;1m Sorry Setelah Update Review Ulang Creator Pertama + Kedua Udah ga pernah Keliatan lagi maaf codenamenya ga disebutin"
+
+echo "  \033[0m>>>\033[32;1m Tools Kemudian Dikembangkan Oleh J_Lnyx69 & Mr_/bon'007"
+echo "  \033[0m>>>\033[32;1m Player Old Pasti Tau Ama Tools Legend Ini"
+echo "\033[0m\n\n"
+echo "
+=> Tekan \033[33mL\033[0m untuk Tutor
+=> Tekan \033[31mM\033[0m untuk Kembali"
+echo -n "=> Pilihan: "
+read taik
+if [ $taik = l ] || [ $taik = L ]
+then
+clear
+cat tutor
+fi
+
+if [ $taik = m ] || [ $taik = M ]
+then
+clear
+sh start
+fi
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi

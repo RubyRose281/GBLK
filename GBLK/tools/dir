@@ -1,0 +1,50 @@
+#!/bin/bash
+clear
+ijo='\033[32;1m'
+abang='\033[31;1m'
+akhir='\033[0m'
+echo "$ijo
+           ..::|[ Directory Scanner ]|::.. $akhir "
+echo "
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\n$abangMasukan Target : "
+read trgt
+echo -n "\nMasukan Extension ( contoh : php ) : "
+read ext
+echo " $akhir"
+echo "\n"
+cd ../z
+python dir -u $trgt -e $ext
+
+
+echo "
+
+"
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read peler
+if [ $peler = b ] || [ $peler = B ]
+then
+clear
+cd ../tools
+sh start
+fi
+
+if [ $peler = k ] || [ $peler = K ]
+then
+clear
+sh exit
+fi

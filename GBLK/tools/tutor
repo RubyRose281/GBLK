@@ -1,0 +1,127 @@
+# Tutor Pemakaian Dan Deskripsi Singkat Dan Curcolan Dikit #
+
+
+#Tutor pemakaian dasar
+1. Untuk memulai ketik kata berikut pada terminal emulator tanpa tanda petik
+
+       " su "
+       " botbrew "
+       " gblk "
+
+2. Lalu muncul daftar tools
+3. Ketik nomor tools yg mau dipakai lalu  tekan enter
+4. Disini kita tidak bisa melihat apa yang diketik jadi mulai teliti
+5. Kenapa?
+6. Bashnya gak suport amat atau apalah gak tau dia gak suport stream live
+
+
+
+#Tutor pemakaian HOST SCANNER
+1. Host scanner fungsinya untuk scan device yg aktiv dalam jaringan wifi
+2. Disini kita bisa mendapat info nama device dan ipnya dan mac nya dan juga os nya
+3. Ini bisa berguna untuk tools lain juga hasilnya
+4. Disini pertama kita masukan IP RANGE,  biasa berupa ip local saja untuk scan device active atau ip publik juga bisa
+5. Contoh ip range ketikan 192.168.1.1/24 atau 10.20.30.40/24 atau contoh ip publik 114.77.91.1/24
+6. Jika udah tinggal tunggu aja prosesnya..
+
+
+
+#Tutor pemakaian TELNET BRUTE DAN SCAN
+1. Tools ini berfungsi untuk menscan dimana ip yg menjalankan service telnet dan sekaligus membrute force nya
+2. Pada bagian IP TARGET bisa di isikan ip yang sudah diketahui melalui host scan atau menggunakan ip range
+3. Lalu ada pilihan simpan file atau tidak 
+4. Jika pilih simpan maka kita lanjut isikan nama yg akan dijadikan nama file itu,  isikan nama saja tanpa format txt atau lainya karna sudah default
+5. Tinggal tunggu selesai dan buka file pada direktori yg tertulis
+6 Jika tidak pilih simpan file lanjut dan tunggu ampe kelar
+
+
+
+
+#Tutor pemakaian ARP-SPOOFER
+1. Tutor ini berfungsi untuk spoofing ke target dari hasil scan host scanner tadi
+2. Jika digunakan di 5 terminal sekaligus maka target akan disconnected dan tidak bisa mengakses apapun seperti saat kita memakai wifikill, minimal penggunaan 2 terminal
+3. Pada bagian pertama masukan ip target
+4. Lalu kita masukan interface yg digunakan misal "wlan0" jika kita memakai jaringan wifi
+5. Lalu tinggal tunggu saja prosesnya...
+
+
+
+#Tutor pemakaian DDOS
+1. Fungsinya kelen dah pada tau
+2. Tinggal masukin ip target aja
+3. Dapet dari mana?
+4. Ping aja targetnya
+
+
+
+
+#Tutor pemakaian SNIFFER
+1. Fungsinya tool ini adalah untuk mencari jodoh
+2. No 1 itu boongan -_-
+3. Ini fungsinya buat sniff semua device aktiv yg ada di jaringan wifi
+4. Yg kita bisa dapatkan dari sniff adalah aku USERNAME dan PASSWORD serta halaman LOGINnya sekaligus
+5. Setiap ada orang yg login menggunakan jaringan wifi kita itu akan terekam dan masuk ke log kita
+6. Kita?
+7. Lu aja kali -_-
+8. Pertama kita di tanya apa akan menyimpan log kedalam file atau tidak
+9. Kata gw sih pilih simpan aja
+10. Kalo pilih simpen lanjut isi nama file yg akan dijadikan file log
+11. Lalu lanjut
+12. PENTING SEKALI
+13. SETELAH LOADING 100% TEKAN TOMBOL SPASI UNTUK MEMULAI SNIFF
+14. Jika sudah memulai sniff mode makan akan muncul tulisan "packet visualization started"
+15. Proses sniffing hanya akan berhenti ketika jaringan wifi mati atau kita matikan manual dengan menekan tombol Q kecil
+16. File log bisa kita buka dengan text editor dan gunakn pencarian untuk mencari string berisi USER DAN PASS
+17. Kalo dri awal gak pilih simpan ya terserah lu dah.. Gw gak saranin kan -_-
+
+
+
+#Tutorial pemakaian WP-BRUTE
+[!] Tools Ini Hanya Dapat Digunakan Jika Halaman Login Berada di
+==> Site.com/wp-login.php
+[!] Tidak Dapat Digunakan Jika Halaman Login Berada Pada Sub Path
+==> Site.com/taik/gblk/wp-login.php
+[!] Pada Bagian Target Tuliskan Domainya Saja
+==> Site.com
+[!] Bukan
+==> Https://www.Site.com
+[!] Tools Ini Sangat Membutuhkan Wordlist Akurat
+[!] Anda Dapat Menambah Atau Mengganti Wordlistnya
+==> /Sdcard/wodlis/passwords.lst
+==> /Sdcard/wodlis/usernames.lst
+
+
+#Tutorial pemakaian IPTABLES
+1. Tools ini sangat berfungsi untuk membantu proses sniffing tapi masih belom rilis,  sniffing masih bisa digunakan dg baik kok
+2. Pini bisa membantu downgrade ssl jadi semua akun bisa di log
+
+#tutorial joomla brute force
+1.siapkan kopi + udud biar gak bosen nunguin user dan pass target ketemu
+2. masukan website yg loginya di http://www.target.co.li/administrator selain gak bakal bisa :v
+
+#Tutorial CMSmap
+1.CMSmap Sanagt berguna untuk scann website
+2.Contoh : Cms WordPress. Joomla. dan Drupal
+3.Sangat cocok untuk Scann Vuln + membrutenya
+4.Gimana menarik bukan..
+
+#Tutuor Zip Pass crack
+1.Biar mudah
+2. Taruh file zipnya di Sdcard
+3. buka tools masukan dirnya
+4. Contoh sdcard/namafile.zip langsung tekan enter ok..
+
+NB.
+Tools ini Membutuhkan Waktu yg sangat lama , Bisa-bisa 1 jam Tergantung Wordlist Semakin Besar Ukuran Wordlist Maka semakin lama
+
+Jika Ingin keluar dari tools ini Tekan
+Volume bawah tahan dan klik C
+
+
+
+
+# Tools akan selalu di tambah dan dikembangkan serta di patch
+# Sc sangat open dan mohon kerjasama dalam pengembanganya
+# Saya sudah banyak rencana pengembangan dan penambahan tools
+# Udah ah 
+# Kurang lebihnya pm aja http://facebook.com/GantengMaks

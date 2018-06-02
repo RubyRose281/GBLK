@@ -1,0 +1,31 @@
+#!/system/xbin/bash
+clear
+
+
+echo "        \033[32;1m..::|[ Nmap SQL Vuln Scanner ]|::..\033[0m "
+
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+
+
+echo -n "\033[31;1mMasukan Target: \033[0m"
+read sss
+echo "\n\033[31;1mTarget:\033[0m \033[33;1m$sss\033[0m"
+nmap -sV --script=http-sql-injection $sss -Pn -p 80 -d
+

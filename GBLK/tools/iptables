@@ -1,0 +1,8 @@
+#!/bin/bash
+
+clear
+echo -n "
+     \033[1;33mBelum Rilis :v Sabar ya :v \033[0m
+"
+read sabar
+sh start

@@ -1,0 +1,146 @@
+#!/bin/bash
+yellow='\e[1;33m'
+blue='\e[1;34m'
+white='\e[1;37m'
+purple='\e[1;35m'
+green='\e[0;32m'
+cyan='\e[1;36m'
+red='\e[1;31m'
+purple='\e[1;35m'
+Gray='\033[1;30m'
+clear
+echo -e "${red}M${white}ohon tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "m${red}O${white}hon tunggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mo${red}H${white}on tunggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "moh${red}O${white}n tunggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "moho${red}N${white} tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon ${red}T${white}unggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon t${red}U${white}nggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tu${red}N${white}ggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tun${red}G${white}gu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tung${red}G${white}u......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tungg${red}U${white}......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "${red}M${white}ohon tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "m${red}O${white}hon tunggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mo${red}H${white}on tunggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "moh${red}O${white}n tunggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "moho${red}N${white} tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon ${red}T${white}unggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon t${red}U${white}nggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tu${red}N${white}ggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tun${red}G${white}gu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tung${red}G${white}u......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tungg${red}U${white}......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "${red}M${white}ohon tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "m${red}O${white}hon tunggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mo${red}H${white}on tunggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "moh${red}O${white}n tunggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "moho${red}N${white} tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon ${red}T${white}unggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon t${red}U${white}nggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tu${red}N${white}ggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tun${red}G${white}gu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tung${red}G${white}u......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tungg${red}U${white}......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "${red}M${white}ohon tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "m${red}O${white}hon tunggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mo${red}H${white}on tunggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "moh${red}O${white}n tunggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "moho${red}N${white} tunggu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon ${red}T${white}unggu......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon t${red}U${white}nggu......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tu${red}N${white}ggu......[ ${red}/ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tun${red}G${white}gu......[ ${red}- ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tung${red}G${white}u......[ ${red}\ ${white}]"
+sleep 0.1
+clear
+echo -e "mohon tungg${red}U${white}......[ ${red}| ${white}]"
+sleep 0.1
+clear
+echo -e "Oke Gud Termux Siap"
+sleep 1
+clear

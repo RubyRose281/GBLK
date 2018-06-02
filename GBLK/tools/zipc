@@ -1,0 +1,61 @@
+#!/bin/bash
+
+clear
+ijo='\033[32;1m'
+aker='\033[0m'
+
+echo "\n$ijo
+      ..::|[ Patator Zip Password Cracker ]|::..
+$aker"
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\033[31;1mMasukan File : \033[0m"
+read file
+
+clear
+echo "
+
+
+
+
+"
+
+cd ../xx/
+
+python2 patator unzip_pass zipfile=/$file password=FILE0 0=../wodlis/passwords.lst -x ignore:code!=0
+
+
+echo "
+
+
+"
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+
+

@@ -1,0 +1,43 @@
+#!/bin/bash
+clear
+echo "\n\033[32;1m"
+echo "           ..::|[ Nmap Connect ]|::..\033[0m"
+echo "
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "Masukan target: "
+read ayam
+clear
+echo "\nTarget: $ayam"
+echo "[#]Memulai!![#]"
+nmap -sV -sC -p 6000 $ayam
+echo "
+
+
+"
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+elif [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi

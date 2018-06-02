@@ -1,0 +1,60 @@
+#!/bin/bash
+
+clear
+echo "
+"
+echo "           \033[32;1m..::|[ FIN Scanner ]|::..\033[0m"
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\033[31;1mMasukan Target : \033[0m"
+read t
+clear
+echo "
+
+"
+echo "\033[33;1mTARGET :\033[0m \033[32;1m$t\033[0m"
+
+echo "
+
+
+
+"
+
+nmap -sF -T4 $t
+
+
+echo "
+
+"
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read peler
+if [ $peler = b ] || [ $peler = B ]
+then
+clear
+sh start
+fi
+
+if [ $peler = k ] || [ $peler = K ]
+then
+clear
+sh exit
+fi
+
+

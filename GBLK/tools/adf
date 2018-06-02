@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read peler
+if [ $peler = b ] || [ $peler = B ]
+then
+clear
+sh start
+fi
+
+if [ $peler = k ] || [ $peler = K ]
+then
+clear
+sh exit
+fi

@@ -1,0 +1,29 @@
+#!/bin/bash
+clear
+
+
+echo " \033[0m"
+
+cd ../xx/
+
+python2 hashcrack
+
+
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+

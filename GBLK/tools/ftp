@@ -1,0 +1,57 @@
+#!/bin/bash
+clear
+clear
+clear
+
+
+echo "
+             \033[32;1m..::|[ FTP Brute Force ]|::.. \033[0m                         "
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\033[33;1mMasukan Server FTP target: \033[0m"
+read trgt
+
+echo "
+
+
+
+"
+
+cd ../xx/
+python2 ftpbrute $trgt ../wodlis/usernames.lst ../wodlis/passwords.lst
+
+echo "
+
+
+
+" 
+
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read upil
+if [ $upil = b ] || [ $upil = B ]
+then
+clear
+sh start
+fi
+
+if [ $upil = k ] || [ $upil = K ]
+then
+clear
+sh exit
+fi

