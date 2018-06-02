@@ -1,6 +1,8 @@
 # GBLK-toolkit
 ![Screenshot](https://image.ibb.co/eZ8Pxd/Untitled.png)
 ###### installation :
+* apt-get update && apt-get upgrade
+* apt-get install git
 * git clone https://github.com/JLynx69/GBLK-toolkit
 * cd GBLK-toolkit
 * chmod +x install
