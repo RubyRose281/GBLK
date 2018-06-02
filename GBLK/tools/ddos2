@@ -1,0 +1,34 @@
+#!/bin/bash
+clear
+echo -e """\033[1;32m
+  +==================================+
+  |         >>>SpongeDos<<<          |
+  +==================================+
+  | Code Name : Jack O'neil          |
+  |----------------------------------|
+  | Diciptakan pada : 14 Feb 2017    |
+  |----------------------------------|
+  | Versi : v2.0                     |
+  +==================================+
+
+"""
+
+echo -e "\033[1;32mContoh : http://target.co.li\n"
+echo -n -e "\033[1;34m[~] \033[1;32mMasukan URL Target : "
+read trgt
+echo -e "\n\033[1;34m[+] \033[1;32mMenyerang \033[1;34m==> \033[1;31m$trgt"
+
+echo -n -e "\033[1;34m[?] \033[1;32mLanjut? (L)lanjut/(M)mohh : "
+read moh
+
+if [ $moh = l ] || [ $moh = L ]
+then
+echo -e "\n >>> Lanjut !!! \n"
+python2 ../ddos/DOS/spongedos.py $trgt
+fi
+
+if [ $moh = m ] || [ $moh = M ]
+then
+clear
+echo -e "\n\033[1;31mNyalimu kecil cuk koyo kontol mu !\n"
+fi
