@@ -11,42 +11,43 @@ echo "  1.) Host Scan"
 echo "  2.) Telnet"
 echo "  3.) ARP-Spoofer"
 echo "  4.) DDOS"
-echo "  5.) Sniffer"
-echo "  6.) Set Iptables"
-echo "  7.) WP-Brute"
-echo "  8.) WP-Scan"
-echo "  9.) Admin Finder"
-echo "  10.) Sqlmap Otomatis"
-echo "  11.) Sqlmap Biasa"
-echo "  12.) Port Scanner"
-echo "  13.) CMS map"
-echo "  14.) MD5 Cracker"
-echo "  15.) MD5 Generator"
-echo "  16.) cPanel bruteForce"
-echo "  17.) FTP BruteForce"
-echo "  18.) Magento BruteForce"
-echo "  19.) Joomla brute"
-echo "  20.) Fb bot like and coment"
-echo "  21.) Vuln Scanner"
-echo "  22.) HTTP BruteForce"
-echo "  23.) MySQL BruteForce"
-echo "  24.) Nmap Connect"
-echo "  25.) SYN Scanner"
-echo "  26.) FIN Scanner"
-echo "  27.) ACK Scanner"
-echo "  28.) Window Scanner"
-echo "  29.) Mikrotik BruteForce"
-echo "  30.) SSH BruteForce"
-echo "  31.) VNC Login Bruteforce"
-echo "  32.) VPS BruteForce"
-echo "  33.) HASH Generator"
-echo "  34.) HASH cracker"
-echo "  35.) ZIP password Cracker"
-echo "  36.) MSSQL BruteForce"
-echo "  37.) GmailPOP BruteForce"
-echo "  38.) SMTP Gmail BruteForce"
-echo "  39.) DNS BruteForce"
-echo "  40.) Directory Scanner"
+echo "  5.) DDOS 2"
+echo "  6.) Sniffer"
+echo "  7.) Set Iptables"
+echo "  8.) WP-Brute"
+echo "  9.) WP-Scan"
+echo "  10.) Admin Finder"
+echo "  11.) Sqlmap Otomatis"
+echo "  12.) Sqlmap Biasa"
+echo "  13.) Port Scanner"
+echo "  14.) CMS map"
+echo "  15.) MD5 Cracker"
+echo "  16.) MD5 Generator"
+echo "  17.) cPanel bruteForce"
+echo "  18.) FTP BruteForce"
+echo "  19.) Magento BruteForce"
+echo "  20.) Joomla brute"
+echo "  21.) Fb bot like and coment"
+echo "  22.) Vuln Scanner"
+echo "  23.) HTTP BruteForce"
+echo "  24.) MySQL BruteForce"
+echo "  25.) Nmap Connect"
+echo "  26.) SYN Scanner"
+echo "  27.) FIN Scanner"
+echo "  28.) ACK Scanner"
+echo "  29.) Window Scanner"
+echo "  30.) Mikrotik BruteForce"
+echo "  31.) SSH BruteForce"
+echo "  32.) VNC Login Bruteforce"
+echo "  33.) VPS BruteForce"
+echo "  34.) HASH Generator"
+echo "  35.) HASH cracker"
+echo "  36.) ZIP password Cracker"
+echo "  37.) MSSQL BruteForce"
+echo "  38.) GmailPOP BruteForce"
+echo "  39.) SMTP Gmail BruteForce"
+echo "  40.) DNS BruteForce"
+echo "  41.) Directory Scanner"
 echo "\n  i.) Info Dev, Tutor"
 echo "  x.) Keluar"
 echo "\033[0m"
@@ -86,181 +87,186 @@ fi
 
 if [ $tool = 5 ]
 then
-sh snif
+bash ddos2
 fi
 
 if [ $tool = 6 ]
 then
-sh iptables
+sh snif
 fi
 
 if [ $tool = 7 ]
 then
-sh wp-info
+sh iptables
 fi
 
 if [ $tool = 8 ]
+then
+sh wp-info
+fi
+
+if [ $tool = 9 ]
 then
 clear
 sh wps
 fi
 
-if [ $tool = 9 ]
+if [ $tool = 10 ]
 then
 python2 ad
 fi
 
-if [ $tool = 10 ]
+if [ $tool = 11 ]
 then
 sh sqlmapc
 fi
 
-if [ $tool = 11 ]
+if [ $tool = 12 ]
 then
 sh sqlmap1
 fi
 
-if [ $tool = 12 ]
+if [ $tool = 13 ]
 then
 sh prot
 fi
 
-if [ $tool = 13 ]
+if [ $tool = 14 ]
 then
 sh cm
 fi
 
-if [ $tool = 14 ]
+if [ $tool = 15 ]
 then
 sh crack
 fi
 
-if [ $tool = 15 ]
+if [ $tool = 16 ]
 then
 sh cetak
 fi
 
-if [ $tool = 16 ]
+if [ $tool = 17 ]
 then
 sh cp
 fi
 
-if [ $tool = 17 ]
+if [ $tool = 18 ]
 then
 sh ftp
 fi
 
-if [ $tool = 18 ]
+if [ $tool = 19 ]
 then
 sh mag
 fi
 
-if [ $tool = 19 ]
+if [ $tool = 20 ]
 then
 sh jbf
 fi
 
-if [ $tool = 20 ]
+if [ $tool = 21 ]
 then
 sh bot
 fi
 
-if [ $tool = 21 ]
+if [ $tool = 22 ]
 then
 sh nvs
 fi
 
-if [ $tool = 22 ]
+if [ $tool = 23 ]
 then
 sh nhbf
 fi
 
-if [ $tool = 23 ]
+if [ $tool = 24 ]
 then
 sh nmbf
 fi
 
-if [ $tool = 24 ]
+if [ $tool = 25 ]
 then
 sh nmapconnect
 fi
 
-if [ $tool = 25 ]
+if [ $tool = 26 ]
 then
 sh syn
 fi
 
-if [ $tool = 26 ]
+if [ $tool = 27 ]
 then
 sh fin
 fi
 
-if [ $tool = 27 ]
+if [ $tool = 28 ]
 then
 sh ack
 fi
 
-if [ $tool = 28 ]
+if [ $tool = 29 ]
 then
 sh window
 fi
 
-if [ $tool = 29 ]
+if [ $tool = 30 ]
 then
 sh hydramikrotik
 fi
 
-if [ $tool = 30 ]
+if [ $tool = 31 ]
 then
 sh hydrassh
 fi
 
-if [ $tool = 31 ]
+if [ $tool = 32 ]
 then
 sh vnc
 fi
 
-if [ $tool = 32 ]
+if [ $tool = 33 ]
 then
 sh vps
 fi
 
-if [ $tool = 33 ]
+if [ $tool = 34 ]
 then
 sh hg
 fi
 
-if [ $tool = 34 ]
+if [ $tool = 35 ]
 then
 sh hc
 fi
 
-if [ $tool = 35 ]
+if [ $tool = 36 ]
 then
 sh zipc
 fi
 
-if [ $tool = 36 ]
+if [ $tool = 37 ]
 then
 sh mssql
 fi
 
-if [ $tool = 37 ]
+if [ $tool = 38 ]
 then
 sh pop
 fi
 
-if [ $tool = 38 ]
+if [ $tool = 39 ]
 then
 sh smtp
 fi
 
-if [ $tool = 39 ]
+if [ $tool = 40 ]
 then
 sh dbf
 fi
 
-if [ $tool = 40 ]
+if [ $tool = 41 ]
 then
 sh dir
 fi
