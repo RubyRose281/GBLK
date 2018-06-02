@@ -12,3 +12,4 @@ bash about
 echo "cd GBLK/tools && sh start" > start
 chmod +x start
 rm about
+rm install
