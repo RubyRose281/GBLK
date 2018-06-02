@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/bin/bash
 
 echo "   
         \033[32;1m..::|[ Sniffer ]|::.. \033[0m
